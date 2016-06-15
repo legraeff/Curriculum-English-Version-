@@ -1,0 +1,61 @@
+%needs this so it behaves better
+\NeedsTeXFormat{LaTeX2e}
+
+%the class for CVs
+\documentclass[portuguese]{curve}
+
+%wider margins
+\usepackage[a4paper,nohead,nofoot,hmargin=1.5cm,vmargin=1cm]{geometry}
+
+% support for extra chars
+\usepackage[utf8]{inputenc}
+
+%used for dingbats(generic symbols)
+\usepackage{pifont}
+
+%used for the smiley icon
+\usepackage{wasysym}
+
+\usepackage{multicol}
+
+%package for longer comments
+%\usepackage{verbatim}
+
+\usepackage[pdftex]{color,graphicx}
+
+%package for links in pdfs
+\usepackage[pdftex]{hyperref}
+\hypersetup{
+    colorlinks,%
+    citecolor=blue,%
+    filecolor=blue,%
+    linkcolor=blue,%
+    urlcolor=blue
+}
+
+\leftheader{
+    Letícia R. Graeff \\
+    Brazil - SC - Florianópolis \\
+    \ding{38} +55 48 3024-4489 \\
+    \ding{38} +55 48 9636-7033 \\
+    \ding{41} \href{mailto:leticia.graeff@gmail.com}{leticia.graeff@gmail.com}  \\
+    \ding{85} \href{https://github.com/legraeff}{github: legraeff} \\
+
+}
+\rightheader{~}
+
+% several little mods, on the font, little orange boxes in the rubrics, etc
+\include{customize_curve}
+
+\begin{document}
+
+    \makeheaders[t]
+    \maketitle
+
+    \makerubric{education}}
+    \makerubric{professional_experience}
+    \makerubric{skills}
+    \makerubric{personal_note}
+
+
+\end{document}
