@@ -1,2 +1,2 @@
 # Curriculum-English-Version-
-My Curriuculum in English
+My Curriuculum in LaTeX (English Version)
